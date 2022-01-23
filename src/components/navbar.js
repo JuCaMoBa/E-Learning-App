@@ -3,17 +3,34 @@ import { Link } from "react-router-dom";
 import "../styles/navbar.scss";
 
 function Navigation() {
+  function toggle() {
+    var x = document.getElementById("topnav");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
+    }
+    console.log(x.className);
+  }
+
   return (
-    <div className="navbar">
-      <Link className="link" to="/">
-        HOME
-      </Link>
-      <Link className="link" to="/about">
-        ABOUT
-      </Link>
-      <Link className="link" to="/contact">
-        CONTACT
-      </Link>
+    <div className="container">
+      <div className="navbar" id="topnav">
+        <Link className="link_home" to="/">
+          HOME
+        </Link>
+        <Link className="link_about" to="/about">
+          ABOUT
+        </Link>
+        <Link className="link_contact" to="/contact">
+          CONTACT
+        </Link>
+      </div>
+      <div className="icon" onClick={toggle}>
+        <div className="icon_bar"></div>
+        <div className="icon_bar"></div>
+        <div className="icon_bar"></div>
+      </div>
     </div>
   );
 }

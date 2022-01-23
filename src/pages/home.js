@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className="container_item_4">
           <img src={Science} alt="Logo-Elearning" />
-          <h3>Maths 14+</h3>
+          <h3>Maths 15+</h3>
         </div>
       </div>
     </div>
