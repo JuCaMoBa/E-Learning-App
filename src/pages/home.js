@@ -10,7 +10,7 @@ export default function Home() {
     <div className="container_primary">
       <div className="container_secondary">
         <div className="container_item_1">
-          <h1>E-LEARNING MATHS</h1>
+          <h1>Easy Maths</h1>
         </div>
       </div>
       <div className="container_tertiary">

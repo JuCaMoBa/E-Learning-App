@@ -5,15 +5,10 @@
   src: url("../fonts/rightchalk.ttf");
 }
 
-a {
-  text-decoration: none;
-  font-family: myFont;
-}
-
 .container {
   display: flex;
   justify-content: space-between;
-  background: #333;
+  background: rgb(255, 255, 255);
   align-items: center;
 }
 
@@ -21,7 +16,7 @@ a {
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #333;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
   align-items: center;
 }
@@ -29,13 +24,13 @@ a {
 /* Style the links inside the navigation bar */
 .navbar a {
   float: left;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
+  font-family: tahoma;
 }
-
 /* Change the color of links on hover */
 .navbar a:hover {
   background-color: #ddd;
@@ -45,7 +40,7 @@ a {
 .icon_bar {
   width: 35px;
   height: 5px;
-  background-color: #ffffff;
+  background-color: #000000;
   margin: 6px 0;
 }
 
