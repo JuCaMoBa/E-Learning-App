@@ -25,6 +25,12 @@ function Navigation() {
         <Link className="link_contact" to="/contact">
           CONTACT
         </Link>
+        <Link className="link_singin" to="/modalsignin">
+          SING IN
+        </Link>
+        <Link className="link_getstarted" to="/contact">
+          GET STARTED
+        </Link>
       </div>
       <div className="icon" onClick={toggle}>
         <div className="icon_bar"></div>

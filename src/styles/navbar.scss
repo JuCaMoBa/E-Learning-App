@@ -10,6 +10,7 @@
   justify-content: space-between;
   background: rgb(255, 255, 255);
   align-items: center;
+  margin-bottom: 50px;
 }
 
 /* Add a black background color to the top navigation */
@@ -51,6 +52,14 @@
   display: none;
 }
 
+.link_singin {
+  display: none;
+}
+
+.link_getstarted {
+  display: none;
+}
+
 .icon {
   top: 5px;
   position: absolute;
@@ -75,6 +84,15 @@
   .link_contact {
     display: flex;
   }
+
+  .link_singin {
+    display: flex;
+  }
+
+  .link_getstarted {
+    display: flex;
+  }
+
   .icon_bar {
     display: none;
   }

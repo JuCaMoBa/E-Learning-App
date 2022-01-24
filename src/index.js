@@ -6,6 +6,7 @@ import App from "./App";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import About from "./pages/about";
+import Modalsignin from "./components/modalsignin";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,7 @@ ReactDOM.render(
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/modalsignin" element={<Modalsignin />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
