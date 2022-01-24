@@ -1,16 +1,10 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
-@font-face {
-  font-family: myFont;
-  src: url("../fonts/rightchalk.ttf");
-}
-
 .container {
   display: flex;
   justify-content: space-between;
   background: rgb(255, 255, 255);
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+  border-bottom: inset;
 }
 
 /* Add a black background color to the top navigation */
