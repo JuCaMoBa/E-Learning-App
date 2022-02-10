@@ -20,6 +20,17 @@
   width: 280px;
 }
 
+.confirmpassword {
+  background: #ffffff;
+  border: 1px solid silver;
+  font-size: 15px;
+  padding: 5px 4px;
+  height: 17px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 280px;
+}
+
 .button {
   padding: 5px 4px;
   background: #ccc;
@@ -27,4 +38,27 @@
   cursor: pointer;
   border-radius: 5px;
   width: 85px;
+}
+
+.firstname {
+  background: #ffffff;
+  border: 1px solid silver;
+  font-size: 15px;
+  padding: 5px 4px;
+  height: 17px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 130px;
+}
+
+.lastname {
+  background: #ffffff;
+  border: 1px solid silver;
+  font-size: 15px;
+  padding: 5px 4px;
+  height: 17px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 130px;
+  margin-left: 10px;
 }
