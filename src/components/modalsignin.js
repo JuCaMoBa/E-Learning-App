@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/modalsingin.scss";
-import Form from "../components/form";
+import Formsignin from "./formsignin";
 
 function Modalsignin() {
   return (
@@ -16,7 +16,7 @@ function Modalsignin() {
           </Link>
         </div>
         <div className="modal__content">
-          <Form />
+          <Formsignin />
         </div>
       </div>
     </div>

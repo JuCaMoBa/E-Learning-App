@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/form.scss";
 
-export default function Form() {
+export default function Formsignin() {
   return (
     <form>
       <input className="email" type="email" placeholder="E-Mail" />
