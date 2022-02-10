@@ -19,16 +19,10 @@ function Navigation() {
         <Link className="link_home" to="/">
           HOME
         </Link>
-        <Link className="link_about" to="/about">
-          ABOUT
-        </Link>
-        <Link className="link_contact" to="/contact">
-          CONTACT
-        </Link>
         <Link className="link_singin" to="/modalsignin">
           SING IN
         </Link>
-        <Link className="link_getstarted" to="/contact">
+        <Link className="link_getstarted" to="/modalsignup">
           GET STARTED
         </Link>
       </div>
