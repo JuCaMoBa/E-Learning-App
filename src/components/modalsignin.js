@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/modalsingin.scss";
+import "../styles/modal.scss";
 import Formsignin from "./formsignin";
 
 function Modalsignin() {

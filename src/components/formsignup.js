@@ -29,7 +29,6 @@ export default function Formsignup() {
   const navigate = useNavigate();
 
   const formSubmit = async (dataForm) => {
-    console.log(`estoy aqui:  ${dataForm}`);
     const { data } = await userSignUp({ ...dataForm });
     if (data) {
       dispatch({
@@ -52,41 +51,51 @@ export default function Formsignup() {
 
   return (
     <form onSubmit={handleSubmit(formSubmit)}>
-      <input
-        {...register("firstName")}
-        className="firstname"
-        type="text"
-        placeholder="First Name"
-      />
-      <p>{errors.firstName?.message}</p>
-      <input
-        {...register("lastName")}
-        className="lastname"
-        type="text"
-        placeholder="Last Name"
-      />
-      <p>{errors.lastName?.message}</p>
-      <input
-        {...register("email")}
-        className="email"
-        type="email"
-        placeholder="E-Mail"
-      />
-      <p> {errors.email?.message}</p>
-      <input
-        {...register("password")}
-        className="password"
-        type="password"
-        placeholder="Password"
-      />
-      <p>{errors.password?.message}</p>
-      <input
-        {...register("confirmPassword")}
-        className="confirmpassword"
-        type="password"
-        placeholder="Confirm Password"
-      />
-      <p>{errors.confirmPassword?.message}</p>
+      <div>
+        <input
+          className="first_name"
+          type="text"
+          placeholder="First Name"
+          {...register("firstName")}
+        />
+        <p>{errors.firstName?.message}</p>
+      </div>
+      <div>
+        <input
+          className="last_name"
+          type="text"
+          placeholder="Last Name"
+          {...register("lastName")}
+        />
+        <p>{errors.lastName?.message}</p>
+      </div>
+      <div>
+        <input
+          className="e_mail"
+          type="email"
+          placeholder="E-Mail"
+          {...register("email")}
+        />
+        <p> {errors.email?.message}</p>
+      </div>
+      <div>
+        <input
+          className="pass_word"
+          type="password"
+          placeholder="Password"
+          {...register("password")}
+        />
+        <p>{errors.password?.message}</p>
+      </div>
+      <div>
+        <input
+          className="confirm_password"
+          type="password"
+          placeholder="Confirm Password"
+          {...register("confirmPassword")}
+        />
+        <p>{errors.confirmPassword?.message}</p>
+      </div>
       <button className="button" type="submit">
         REGISTER
       </button>

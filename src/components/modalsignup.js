@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/modal.scss";
 import Formsignup from "./formsignup";
 
 function Modalsignup() {
