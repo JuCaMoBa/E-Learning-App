@@ -5,7 +5,7 @@ import Science from "../img/Science.png";
 
 import "../styles/profile.scss";
 
-export default function Home() {
+export default function Profile() {
   return (
     <div className="container_primary">
       <div className="container_secondary">
