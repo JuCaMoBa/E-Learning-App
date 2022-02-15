@@ -8,9 +8,9 @@ import Modalsignup from "./components/modalsignup";
 function App() {
   return (
     <>
-      <Navigation />;
+      <Navigation />
+      <Home />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/modalsignin" element={<Modalsignin />} />
         <Route path="/modalsignup" element={<Modalsignup />} />
       </Routes>
