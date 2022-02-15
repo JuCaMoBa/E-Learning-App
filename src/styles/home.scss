@@ -1,86 +1,43 @@
-@font-face {
-  font-family: myFont;
-  src: url("../fonts/rightchalk.ttf");
-}
-
-.container_primary {
+.home {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: auto;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/LogoHome.jpg");
+  background-size: auto;
+  background-repeat: round;
 }
 
-.container_item_1 {
+.home__container {
+  display: flex;
+  align-items: center;
+}
+
+.home__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header_1 {
+  background-color: rgb(51, 102, 102, 0.5);
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 60px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.header_2 {
+  background-color: rgb(51, 102, 102, 0.5);
+  border-radius: 15px;
+  color: white;
+  margin-bottom: 60px;
+  text-align: center;
+  padding: 10px;
+}
+
+.home__logo {
   width: 250px;
   overflow: hidden;
-  font-family: tahoma;
-  color: #54adbb;
-  text-align: center;
-  font-size: 20px;
-}
-
-.container_item_2 {
-  width: 130px;
-  overflow: hidden;
-}
-
-h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #54adbb;
-  display: flex;
-  justify-content: center;
-}
-.container_item_3 {
-  width: 130px;
-  overflow: hidden;
-}
-
-.container_item_4 {
-  width: 130px;
-  overflow: hidden;
-}
-
-.container_primary img {
-  width: 100%;
-  height: auto;
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .container_primary {
-    display: flex;
-    justify-content: center;
-    height: auto;
-  }
-
-  .container_secondary {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-bottom: 80px;
-  }
-
-  .container_tertiary {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    height: auto;
-  }
-  .container_item_2 {
-    width: 210px;
-    overflow: hidden;
-  }
-  .container_item_3 {
-    width: 210px;
-    overflow: hidden;
-  }
-
-  .container_item_4 {
-    width: 210px;
-    overflow: hidden;
-  }
 }
