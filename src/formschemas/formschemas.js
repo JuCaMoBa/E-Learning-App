@@ -37,27 +37,3 @@ export const SingUpSchema = object()
       .required("Password is a required field"),
   })
   .required();
-
-export const EmailSchema = object()
-  .shape({
-    email: string()
-      .email("Insert a valid email")
-      .trim()
-      .required("Email is a required field"),
-  })
-  .required();
-
-export const PassowrdlSchema = object()
-  .shape({
-    confirmPassword: string()
-      .oneOf([ref("password"), null], "Passwords not match")
-      .required("Please Confirm your Password"),
-    password: string()
-      /* .min(8, 'Password must be at least 8 charaters') */
-      .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/, {
-        message:
-          "Password  must contain 8 characters, one uppercase, one lowercase, one number and one special character",
-      })
-      .required("Password is a required field"),
-  })
-  .required();
