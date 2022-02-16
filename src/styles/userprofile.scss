@@ -1,0 +1,20 @@
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.user__name {
+  color: #54adbb;
+  text-align: center;
+}
+
+.user__image {
+  width: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user__editprofile {
+  text-align: center;
+}
