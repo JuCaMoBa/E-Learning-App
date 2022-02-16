@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/userprofile.scss";
 import iconImage from "../img/circleImage.png";
 
 export default function Userprofile() {
+  const navigate = useNavigate();
+  function handleClick() {
+    navigate("/editprofile");
+  }
+
   return (
     <div className="user">
       <div className="user__info">
@@ -12,7 +18,9 @@ export default function Userprofile() {
         <h6 className="user__phone">Phone:</h6>
         <h6 className="user__country">Country:</h6>
         <div>
-          <button className="user__editprofile">Edit Profile</button>
+          <button onClick={handleClick} className="user__editprofile">
+            Edit Profile
+          </button>
         </div>
       </div>
     </div>

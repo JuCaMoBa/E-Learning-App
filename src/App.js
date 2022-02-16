@@ -9,6 +9,7 @@ import Userprofile from "./pages/userprofile";
 import Math48 from "./pages/math48";
 import Math914 from "./pages/math914";
 import Math15 from "./pages/math15";
+import Editprofile from "./pages/editprofile";
 import { PrivateRoute } from "./restrictedroutes/privateroute";
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
             </PrivateRoute>
           }
         />
+        <Route path="/editprofile" element={<Editprofile />} />
       </Routes>
     </>
   );
