@@ -39,7 +39,7 @@ export default function Formsignup() {
           isLoggedIn: true,
         },
       });
-      navigate("/profile");
+      navigate("/mathslevel");
     } else {
       Swal.fire({
         title: "Error!",
