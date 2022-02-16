@@ -48,7 +48,7 @@ function Navigation() {
         <Link className="link_home" to="/">
           HOME
         </Link>
-        <Link className="link_singin" to="/profile">
+        <Link className="link_singin" to="/userprofile">
           PROFILE
         </Link>
         <Link onClick={onSignOut} className="link_getstarted" to="/">

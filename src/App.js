@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Modalsignin from "./components/modalsignin";
 import Modalsignup from "./components/modalsignup";
 import Mathslevel from "./pages/mathslevel";
+import Userprofile from "./pages/userprofile";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/userprofile" element={<Userprofile />} />
         <Route path="/mathslevel" element={<Mathslevel />} />
         <Route path="/modalsignin" element={<Modalsignin />} />
         <Route path="/modalsignup" element={<Modalsignup />} />
