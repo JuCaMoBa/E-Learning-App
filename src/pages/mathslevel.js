@@ -3,14 +3,14 @@ import Maths from "../img/Math.png";
 import Enginering from "../img/enginering.png";
 import Science from "../img/Science.png";
 
-import "../styles/profile.scss";
+import "../styles/mathslevel.scss";
 
-export default function Profile() {
+export default function Mathslevel() {
   return (
     <div className="container_primary">
       <div className="container_secondary">
         <div className="container_item_1">
-          <h1>Easy Maths</h1>
+          <h1>Choose your Maths Level</h1>
         </div>
       </div>
       <div className="container_tertiary">
