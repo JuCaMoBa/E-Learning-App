@@ -9,7 +9,7 @@ import Userprofile from "./pages/userprofile";
 import Math48 from "./pages/math48";
 import Math914 from "./pages/math914";
 import Math15 from "./pages/math15";
-import Editprofile from "./pages/editprofile";
+import Modaleditprofile from "./components/modaleditprofile";
 import { PrivateRoute } from "./restrictedroutes/privateroute";
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
         />
         <Route path="/modalsignin" element={<Modalsignin />} />
         <Route path="/modalsignup" element={<Modalsignup />} />
+        <Route path="/modaleditprofile" element={<Modaleditprofile />} />
         <Route
           path="/math48"
           element={
@@ -60,7 +61,6 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route path="/editprofile" element={<Editprofile />} />
       </Routes>
     </>
   );

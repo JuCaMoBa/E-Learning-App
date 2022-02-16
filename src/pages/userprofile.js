@@ -6,7 +6,7 @@ import iconImage from "../img/circleImage.png";
 export default function Userprofile() {
   const navigate = useNavigate();
   function handleClick() {
-    navigate("/editprofile");
+    navigate("/modaleditprofile");
   }
 
   return (
