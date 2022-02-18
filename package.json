@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@cloudinary/react": "^1.0.1",
+    "@cloudinary/url-gen": "^1.5.1",
     "@hookform/resolvers": "^2.8.8",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -15,6 +17,7 @@
     "react-scripts": "5.0.0",
     "sass": "^1.49.0",
     "sweetalert2": "^11.4.0",
+    "swr": "^1.2.1",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"
   },
