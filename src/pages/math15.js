@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/mathxx.scss";
 import Derivada from "../img/Derivada.png";
 import Integral from "../img/Integral.png";
+import Limite from "../img/Limite.png";
 
 export default function App() {
   const questions = [
@@ -34,6 +35,25 @@ export default function App() {
         { answerText: "Gauss", isCorrect: false },
         { answerText: "Galios", isCorrect: false },
         { answerText: "Liebniz", isCorrect: true },
+      ],
+    },
+    {
+      questionText: "the imaginary number i is equal to",
+      answerOptions: [
+        { answerText: "√-1", isCorrect: true },
+        { answerText: "√1", isCorrect: false },
+        { answerText: "√-2", isCorrect: false },
+        { answerText: "√2", isCorrect: false },
+      ],
+    },
+    {
+      questionText: "Calculate the indicated limit.",
+      image: Limite,
+      answerOptions: [
+        { answerText: "No existe", isCorrect: false },
+        { answerText: "1", isCorrect: true },
+        { answerText: "Infinito", isCorrect: false },
+        { answerText: "0", isCorrect: false },
       ],
     },
   ];
