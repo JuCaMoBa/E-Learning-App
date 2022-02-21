@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import Maths from "../img/Math.png";
 import { useNavigate } from "react-router-dom";
 import Enginering from "../img/enginering.png";
 import Science from "../img/Science.png";
+import { types } from "../types/types";
+import UserContext from "../store/context";
 
 import "../styles/mathslevel.scss";
 
 export default function Choosecategory() {
+  const { dispatch } = useContext(UserContext);
   const navigate = useNavigate();
   function goMathlevel() {
     return navigate("/mathslevel");
+  }
+  function goTrivia() {
+    dispatch({
+      type: types.trivia,
+      payload: {
+        category: "history",
+      },
+    });
+
+    return navigate("/trivia");
   }
 
   return (
@@ -25,7 +38,7 @@ export default function Choosecategory() {
           <h3>Maths</h3>
         </div>
         <div className="container_item_3">
-          <img src={Enginering} alt="Logo-Elearning" />
+          <img onClick={goTrivia} src={Enginering} alt="Logo-Elearning" />
           <h3>History</h3>
         </div>
         <div className="container_item_4">

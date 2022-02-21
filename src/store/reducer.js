@@ -47,6 +47,13 @@ export const reducer = (state, action) => {
         user: action.payload.user,
       };
     }
+    case types.trivia: {
+      return {
+        ...state,
+        category: action.payload,
+      };
+    }
+
     default:
       return state;
   }

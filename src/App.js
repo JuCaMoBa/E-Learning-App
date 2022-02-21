@@ -12,6 +12,7 @@ import Math15 from "./pages/math15";
 import Modaleditprofile from "./components/modaleditprofile";
 import { PrivateRoute } from "./restrictedroutes/privateroute";
 import Choosecategory from "./pages/choosecategory";
+import Apitrivia from "./components/Apitrivia";
 
 function App() {
   return (
@@ -46,6 +47,14 @@ function App() {
         <Route path="/modalsignin" element={<Modalsignin />} />
         <Route path="/modalsignup" element={<Modalsignup />} />
         <Route path="/modaleditprofile" element={<Modaleditprofile />} />
+        <Route
+          path="/trivia/"
+          element={
+            <PrivateRoute>
+              <Apitrivia />
+            </PrivateRoute>
+          }
+        />
         <Route
           path="/math48"
           element={
