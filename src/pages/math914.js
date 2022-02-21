@@ -7,7 +7,7 @@ import Pentagono from "../img/Pentagono.jpg";
 import Ruboid from "../img/Ruboid.jpg";
 import Pitagoras from "../img/Pitagoras.png";
 
-export default function App() {
+export default function Math914() {
   const questions = [
     {
       questionText: "What type of angle is it? ",

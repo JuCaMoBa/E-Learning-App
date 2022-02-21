@@ -5,7 +5,7 @@ import Derivada from "../img/Derivada.png";
 import Integral from "../img/Integral.png";
 import Limite from "../img/Limite.png";
 
-export default function App() {
+export default function Math15() {
   const questions = [
     {
       questionText: "Calculate the derivative of:  ",

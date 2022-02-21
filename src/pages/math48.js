@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/mathxx.scss";
 
-export default function App() {
+export default function Math48() {
   const questions = [
     {
       questionText:
