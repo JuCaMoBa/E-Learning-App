@@ -11,6 +11,7 @@ import Math914 from "./pages/math914";
 import Math15 from "./pages/math15";
 import Modaleditprofile from "./components/modaleditprofile";
 import { PrivateRoute } from "./restrictedroutes/privateroute";
+import Choosecategory from "./pages/choosecategory";
 
 function App() {
   return (
@@ -31,6 +32,14 @@ function App() {
           element={
             <PrivateRoute>
               <Mathslevel />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/choosecategory"
+          element={
+            <PrivateRoute>
+              <Choosecategory />
             </PrivateRoute>
           }
         />
