@@ -26,19 +26,18 @@ export default function Userprofile() {
   }
 
   console.log(user);
-
   return (
     <div className="user">
       <div className="user__info">
         <h4 className="user__name">{`${user.firstName} ${user.lastName}`}</h4>
         {image.publicID ? (
-          <AdvancedImage className="user__image" cldImg={image} />
+          <AdvancedImage className="user__image" cldImg={user.photo} />
         ) : (
-          <img className="user__image" src={user.photo} alt="" />
+          <img className="user__image" src={iconImage} alt="" />
         )}
         <h6 className="user__email">{`Email: ${user.email}`} </h6>
         <h6 className="user__phone">
-          {user.phone === null ? `Phone:` : `Phone: ${user.phone}`}
+          {user.cellphone === null ? `Phone:` : `Phone: ${user.cellphone}`}
         </h6>
         <h6 className="user__country">{`Country: ${user.country}`}</h6>
         <div>

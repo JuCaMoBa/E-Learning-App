@@ -10,13 +10,11 @@ export default function Editprofile() {
   } = useProfile();
 
   const [inputs, setInputs] = useState({
-    firstname: "",
-    lastname: "",
+    firstName: "",
+    lastName: "",
     country: "",
-    phone: "",
+    cellphone: "",
   });
-
-  const { firstname, lastname, country, phone } = inputs;
 
   const fileHandler = ({ target }) => {
     const file = target.files[0];
@@ -26,24 +24,17 @@ export default function Editprofile() {
     axios
       .post("https://api.cloudinary.com/v1_1/dyia2dpqy/image/upload", formData)
       .then((response) => updateUserPhoto(response.data.secure_url));
-    // updateUserPhoto();
-    // Capturar URL de la imagen, guardar la url en el back end
   };
 
   const handleInputChange = ({ target }) => {
     setInputs({ ...inputs, [target.name]: target.value });
   };
 
+  console.log(inputs);
+
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const formData = new FormData();
-    // if (photo) formData.append("file", photo);
-    // if (firstname) formData.append("firstname", firstname);
-    // if (lastname) formData.append("lastname", lastname);
-    // if (country) formData.append("country", country);
-    // if (phone) formData.append("phone", phone);
-    // console.log(formData);
     await update(inputs);
     navigate("/userprofile");
   };
@@ -52,24 +43,24 @@ export default function Editprofile() {
     <div className="edit__profile_form">
       <form onSubmit={handleSubmit}>
         <input
-          className="firstname"
-          name="firstname"
+          className="firstame"
+          name="firstName"
           placeholder="First Name"
           type="text"
           onChange={handleInputChange}
         />
         <input
           className="lastname"
-          name="lastname"
+          name="lastName"
           placeholder="Last Name"
           type="text"
           onChange={handleInputChange}
         />
         <input
-          className="phone"
-          name="phone"
+          className="cellphone"
+          name="cellphone"
           placeholder="Phone"
-          type="text"
+          type="number"
           onChange={handleInputChange}
         />
         <input
