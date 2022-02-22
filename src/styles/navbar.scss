@@ -1,7 +1,11 @@
 .container {
   display: flex;
   justify-content: space-between;
-  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0),
+    rgb(0, 175, 239, 0.5)
+  );
   align-items: center;
 }
 
@@ -9,7 +13,11 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0),
+    rgb(0, 175, 239, 0.5)
+  );
   overflow: hidden;
   align-items: center;
 }
