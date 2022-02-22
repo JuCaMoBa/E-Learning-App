@@ -15,7 +15,6 @@ function Navigation() {
     } else {
       x.className = "navbar";
     }
-    console.log(x.className);
   }
 
   function onSignOut() {
