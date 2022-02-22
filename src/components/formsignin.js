@@ -27,7 +27,6 @@ export default function Formsignin() {
 
   const formSubmit = async (dataForm) => {
     const { data } = await userSignIn({ ...dataForm });
-    console.log(dataForm);
     if (data) {
       dispatch({
         type: types.signin,
