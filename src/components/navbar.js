@@ -4,9 +4,15 @@ import UserContext from "../store/context";
 import { types } from "../types/types";
 import iconImage from "../img/circleImage.png";
 import "../styles/navbar.scss";
+import { Cloudinary } from "@cloudinary/url-gen";
+import { CLOUD_NAME } from "../api/consts";
 
 function Navigation() {
   const { state, dispatch } = useContext(UserContext);
+  const {
+    state: { user },
+  } = useContext(UserContext);
+
   const navigate = useNavigate();
   function toggle() {
     var x = document.getElementById("topnav");
@@ -19,8 +25,17 @@ function Navigation() {
 
   function onSignOut() {
     dispatch({ type: types.signout });
-    navigate("/signin");
+    navigate("/");
   }
+
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: CLOUD_NAME,
+    },
+  });
+
+  let image;
+  !state.isLoggedIn ? (image = cld.image()) : (image = cld.image(user.photo));
 
   return !state.isLoggedIn ? (
     <div className="container">
@@ -55,7 +70,11 @@ function Navigation() {
         </Link>
       </div>
       <div className="icon" onClick={toggle}>
-        <img src={iconImage} alt="" className="icon__profile" />
+        {image.publicID ? (
+          <img className="icon__profile" src={image.publicID} alt="" />
+        ) : (
+          <img className="icon__profile" src={iconImage} alt="" />
+        )}
       </div>
     </div>
   );
