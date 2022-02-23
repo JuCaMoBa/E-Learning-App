@@ -4,11 +4,8 @@ import Navigation from "./components/navbar";
 import Home from "./pages/home";
 import Modalsignin from "./components/modalsignin";
 import Modalsignup from "./components/modalsignup";
-import Mathslevel from "./pages/mathslevel";
 import Userprofile from "./pages/userprofile";
-import Math48 from "./pages/math48";
-import Math914 from "./pages/math914";
-import Math15 from "./pages/math15";
+import Maths from "./pages/maths";
 import Modaleditprofile from "./components/modaleditprofile";
 import { PrivateRoute } from "./restrictedroutes/privateroute";
 import Choosecategory from "./pages/choosecategory";
@@ -25,14 +22,6 @@ function App() {
           element={
             <PrivateRoute>
               <Userprofile />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/mathslevel"
-          element={
-            <PrivateRoute>
-              <Mathslevel />
             </PrivateRoute>
           }
         />
@@ -56,26 +45,10 @@ function App() {
           }
         />
         <Route
-          path="/math48"
+          path="/maths"
           element={
             <PrivateRoute>
-              <Math48 />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/math914"
-          element={
-            <PrivateRoute>
-              <Math914 />
-            </PrivateRoute>
-          }
-        />
-        <Route
-          path="/math15"
-          element={
-            <PrivateRoute>
-              <Math15 />
+              <Maths />
             </PrivateRoute>
           }
         />

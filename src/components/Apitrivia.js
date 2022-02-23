@@ -56,7 +56,7 @@ export default function Apitrivia() {
             <div className="container__score">
               You answered {score} correct question out of {trivia.length}
               <h3 onClick={handleClick} className="header_3">
-                Click me to select a new level Quiz
+                Click me to select a new Category Quiz
               </h3>
             </div>
           ) : (

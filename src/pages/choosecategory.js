@@ -13,7 +13,7 @@ export default function Choosecategory() {
   const { dispatch } = useContext(UserContext);
   const navigate = useNavigate();
   function goMathlevel() {
-    return navigate("/mathslevel");
+    return navigate("/maths");
   }
   function goTriviaHistory() {
     dispatch({
