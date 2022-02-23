@@ -5,8 +5,7 @@
 }
 
 .user__name {
-  color: #54adbb;
-  text-align: center;
+  color: rgba(0, 175, 239, 0.5);
 }
 
 .user__image {
@@ -23,4 +22,12 @@
   cursor: pointer;
   border-radius: 5px;
   width: 85px;
+}
+
+.user__info {
+  border-style: outset;
+  border-radius: 30px;
+  margin: 20px;
+  padding: 20px;
+  border-color: rgba(0, 175, 239, 0.5);
 }
