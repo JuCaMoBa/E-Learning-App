@@ -30,8 +30,6 @@ export default function Editprofile() {
     setInputs({ ...inputs, [target.name]: target.value });
   };
 
-  console.log(inputs);
-
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,7 +41,7 @@ export default function Editprofile() {
     <div className="edit__profile_form">
       <form onSubmit={handleSubmit}>
         <input
-          className="firstame"
+          className="firstname"
           name="firstName"
           placeholder="First Name"
           type="text"
@@ -57,7 +55,7 @@ export default function Editprofile() {
           onChange={handleInputChange}
         />
         <input
-          className="cellphone"
+          className="phone"
           name="cellphone"
           placeholder="Phone"
           type="number"
