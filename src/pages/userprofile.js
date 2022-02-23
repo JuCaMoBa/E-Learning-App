@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
-import { AdvancedImage } from "@cloudinary/react";
 import { useNavigate } from "react-router-dom";
 import UserContext from "../store/context";
 
@@ -18,20 +17,19 @@ export default function Userprofile() {
       cloudName: CLOUD_NAME,
     },
   });
+
   const image = cld.image(user.photo);
 
   const navigate = useNavigate();
   function handleClick() {
     navigate("/modaleditprofile");
   }
-
-  console.log(user);
   return (
     <div className="user">
       <div className="user__info">
         <h4 className="user__name">{`${user.firstName} ${user.lastName}`}</h4>
         {image.publicID ? (
-          <AdvancedImage className="user__image" cldImg={user.photo} />
+          <img className="user__image" src={image.publicID} alt="" />
         ) : (
           <img className="user__image" src={iconImage} alt="" />
         )}
