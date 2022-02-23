@@ -9,4 +9,4 @@ export const updateUserProfile = (body) =>
 export const updateUserPhoto = (urlString) =>
   http
     .put("/users/profile/photo", { url: urlString })
-    .then((response) => console.log("envio:", urlString));
+    .then((response) => urlString);
