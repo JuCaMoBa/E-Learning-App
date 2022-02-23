@@ -5,7 +5,7 @@
 }
 
 .user__name {
-  color: rgba(0, 175, 239, 0.5);
+  color: darkcyan;
 }
 
 .user__image {
@@ -30,4 +30,21 @@
   margin: 20px;
   padding: 20px;
   border-color: rgba(0, 175, 239, 0.5);
+}
+
+.user__container__editprofile {
+  display: flex;
+  justify-content: center;
+}
+
+.user__email {
+  color: darkcyan;
+}
+
+.user__phone {
+  color: darkcyan;
+}
+
+.user__country {
+  color: darkcyan;
 }
