@@ -38,7 +38,7 @@ export default function Userprofile() {
           {user.cellphone === null ? `Phone:` : `Phone: ${user.cellphone}`}
         </h6>
         <h6 className="user__country">{`Country: ${user.country}`}</h6>
-        <div>
+        <div className="user__container__editprofile">
           <button onClick={handleClick} className="user__editprofile">
             Edit Profile
           </button>
