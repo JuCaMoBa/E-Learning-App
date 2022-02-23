@@ -44,6 +44,13 @@ export default function Userprofile() {
           </button>
         </div>
       </div>
+      <div className="user__progress">
+        <h4 className="user__progress__title">Your Progress</h4>
+        <h6 className="user__progress__maths">Max Score in Maths: </h6>
+        <h6 className="user__progress__history">Max Score in History: </h6>
+        <h6 className="user__progress__sciencie">Max Score in Sciencie: </h6>
+        <h6 className="user__progress__geography">Max Score in Geography: </h6>
+      </div>
     </div>
   );
 }
