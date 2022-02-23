@@ -30,7 +30,6 @@ export default function Formsignup() {
 
   const formSubmit = async (dataForm) => {
     const { data } = await userSignUp({ ...dataForm });
-    console.log(dataForm);
     if (data) {
       dispatch({
         type: types.signup,
