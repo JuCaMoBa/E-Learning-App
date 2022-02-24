@@ -10,3 +10,10 @@ export const updateUserPhoto = (urlString) =>
   http
     .put("/users/profile/photo", { url: urlString })
     .then((response) => urlString);
+
+export const createUserScore = (body) =>
+  http.post("/maxscores", body).then((response) => body);
+
+export const getUserScore = () => {
+  http.get(`/maxscores/`).then((response) => response.data);
+};
