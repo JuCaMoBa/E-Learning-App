@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import { API_TRIVIA_URL } from "../api/consts";
 import UserContext from "../store/context";
+import { createUserScore } from "../api/userprofile";
 
 export default function Apitrivia() {
   const [trivia, setTrivia] = useState(null);
@@ -46,7 +48,19 @@ export default function Apitrivia() {
   };
 
   function handleClick() {
-    return navigate("/choosecategory");
+    if (showScore === true) {
+      if (category.category === "history") {
+        createUserScore({ history: score });
+        return navigate("/choosecategory");
+      }
+      if (category.category === "geography") {
+        createUserScore({ geography: score });
+        return navigate("/choosecategory");
+      } else {
+        createUserScore({ science: score });
+        return navigate("/choosecategory");
+      }
+    }
   }
   return (
     trivia && (
@@ -78,6 +92,7 @@ export default function Apitrivia() {
                 {trivia[currentQuestion].answerOptions &&
                   trivia[currentQuestion].answerOptions.map((answerOption) => (
                     <button
+                      key={uuidv4()}
                       onClick={() =>
                         handleAnswerOptionClick(answerOption.isCorrect)
                       }
