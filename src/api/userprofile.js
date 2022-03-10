@@ -12,8 +12,8 @@ export const updateUserPhoto = (urlString) =>
     .then((response) => urlString);
 
 export const createUserScore = (body) =>
-  http.post("/maxscores", body).then((response) => body);
+  http.post("/maxscores", body).then((response) => response.data);
 
-export const getUserScore = () => {
-  http.get(`/maxscores/`).then((response) => response.data);
+export const getUserScore = (id) => {
+  http.get(`/maxscores/${id}`).then((response) => response.data);
 };

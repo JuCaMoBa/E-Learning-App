@@ -2,15 +2,22 @@ import React, { useContext } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { useNavigate } from "react-router-dom";
 import UserContext from "../store/context";
-
+import { useScoreByUser } from "../hooks/useUsersScores";
 import { CLOUD_NAME } from "../api/consts";
 import "../styles/userprofile.scss";
 import iconImage from "../img/circleImage.png";
 
 export default function Userprofile() {
   const {
-    state: { user },
+    state: {
+      user,
+      user: { _id: id },
+    },
   } = useContext(UserContext);
+
+  const {
+    usersMaxScores: { data: maxScoresData /* error */ },
+  } = useScoreByUser(id);
 
   const cld = new Cloudinary({
     cloud: {
