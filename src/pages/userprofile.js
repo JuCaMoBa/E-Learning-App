@@ -53,10 +53,18 @@ export default function Userprofile() {
       </div>
       <div className="user__progress">
         <h4 className="user__progress__title">Your Progress</h4>
-        <h6 className="user__progress__maths">Max Score in Maths: </h6>
-        <h6 className="user__progress__history">Max Score in History: </h6>
-        <h6 className="user__progress__sciencie">Max Score in Sciencie: </h6>
-        <h6 className="user__progress__geography">Max Score in Geography: </h6>
+        <h6 className="user__progress__maths">
+          Max Score in Maths: {maxScoresData?.data1[0]?.maths}
+        </h6>
+        <h6 className="user__progress__history">
+          Max Score in History: {maxScoresData?.data2[0]?.history}
+        </h6>
+        <h6 className="user__progress__sciencie">
+          Max Score in Sciencie: {maxScoresData?.data3[0]?.science}
+        </h6>
+        <h6 className="user__progress__geography">
+          Max Score in Geography: {maxScoresData?.data4[0]?.geography}
+        </h6>
       </div>
     </div>
   );
