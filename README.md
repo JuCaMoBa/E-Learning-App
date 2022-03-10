@@ -6,6 +6,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### Before Run "npm start"
+
+Rename .env.example for .env and configure your owns set of variables
+
+example:
+REACT_APP_BASE_URL=http://127.0.0.1:4000/api the backend is in repositorie Elerning-Server
+REACT_APP_CLOUDINARY_CLOUD_NAME= your cloudynary cloud name
+REACT_APP_TRIVIA_URL=https://api.trivia.willfry.co.uk/questions
+
 ### `npm start`
 
 Runs the app in the development mode.\
